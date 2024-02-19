@@ -1,6 +1,14 @@
 @use "./partials/variables" as *;
 @use "./partials/mixins" as *;
 
-h1 {
-  color: red;
+@import "bootstrap/scss/bootstrap";
+
+ul {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0;
+}
+a {
+  text-decoration: none;
 }

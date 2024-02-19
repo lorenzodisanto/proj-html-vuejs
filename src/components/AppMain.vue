@@ -1,11 +1,13 @@
 <script></script>
 
 <template>
-  <h2>App Main</h2>
+  <main><h2>App Main</h2></main>
 </template>
 
 <style lang="scss" scoped>
-h2 {
-  color: blue;
+main {
+  border: 1px dashed red;
+  padding: 200px;
+  text-align: center;
 }
 </style>
