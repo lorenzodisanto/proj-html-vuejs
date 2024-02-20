@@ -20,6 +20,13 @@ import {
   faBars,
   faAngleRight,
   faAngleLeft,
+  faDollarSign,
+  faCar,
+  faGasPump,
+  faArrowRight,
+  faQuoteRight,
+  faCheck,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
@@ -29,7 +36,14 @@ library.add(
   faTwitter,
   faBars,
   faAngleRight,
-  faAngleLeft
+  faAngleLeft,
+  faDollarSign,
+  faCar,
+  faGasPump,
+  faArrowRight,
+  faQuoteRight,
+  faCheck,
+  faXmark
 );
 
 const app = createApp(App);
