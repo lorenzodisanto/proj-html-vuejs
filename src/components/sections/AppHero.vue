@@ -42,6 +42,17 @@ export default {
       <div class="carousel-container">
         <div class="slides">
           <img :src="buildImagePath(slides[activeSlide])" alt="" />
+          <div class="text">
+            <h2>Buy And Sell Your Car At Its Value</h2>
+            <p>Find the right price and dealer.</p>
+            <div class="touch-container">
+              <div class="touch touch-black">
+                <span
+                  >Learn More <font-awesome-icon icon="fa-solid fa-arrow-right"
+                /></span>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="arrow-next" @click="nextClick()">
           <font-awesome-icon icon="fa-solid fa-angle-right" />
@@ -61,15 +72,37 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: $white;
 
   .carousel-container {
     width: 100%;
     position: relative;
 
-    .slides img {
-      width: 100%;
-      height: 800px;
-      object-fit: cover;
+    .slides {
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 800px;
+        object-fit: cover;
+      }
+
+      .text {
+        position: absolute;
+        width: 600px;
+        top: 250px;
+        left: 15%;
+        h2 {
+          font-size: 4rem;
+        }
+
+        p {
+          font-size: 1.5rem;
+        }
+        .touch-container {
+          justify-content: flex-start;
+        }
+      }
     }
 
     .arrow-next,

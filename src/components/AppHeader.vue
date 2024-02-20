@@ -41,7 +41,7 @@ export default {
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
 header {
-  background-color: $white;
+  background-color: $bg-color;
   color: $black;
   display: flex;
   justify-content: center;

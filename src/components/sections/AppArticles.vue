@@ -47,21 +47,24 @@ export default {
   <section>
     <div class="container">
       <div class="title">
+        <div class="thumbup">
+          <img src="../../assets/img/thumbup2.jpg" alt="" />
+        </div>
         <h3>Resent Articles</h3>
         <p>Useful indormation about car.</p>
       </div>
       <div class="row">
         <div class="col" v-for="article in articles">
-          <div class="box-article">
+          <div class="box">
             <div>
               <img :src="buildImagePath(article.image)" alt="" />
               <p>{{ article.date }}</p>
               <h5>{{ article.name }}</h5>
               <p>{{ article.text }}</p>
             </div>
-            <div class="btn-container">
-              <div class="btn-more">
-                <p>More</p>
+            <div class="touch-container">
+              <div class="touch touch-black">
+                <span>More</span>
               </div>
             </div>
           </div>
@@ -75,40 +78,34 @@ export default {
 @use "../../styles/partials/variables" as *;
 
 section {
-  background-color: #fbfbfb;
-  padding: 100px;
+  background-color: $bg-color;
+  margin-bottom: 50px;
 
   .title {
-    text-align: center;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  .box-article {
-    padding: 30px;
-    font-size: 0.9rem;
-    background-color: $white;
-    border-radius: 10px;
-    box-shadow: 1px 2px 5px #dcdbdb;
-    img {
-      width: 100%;
-    }
-
-    .btn-container {
+    .thumbup {
+      background-color: $black;
+      margin-top: 40px;
+      padding: 10px;
+      width: 110px;
+      height: 110px;
       display: flex;
       justify-content: center;
-    }
+      align-items: center;
+      border-radius: 50%;
 
-    .btn-more {
-      background-color: $black;
-      width: 120px;
-      height: 60px;
-      line-height: 35px;
-      vertical-align: middle;
-      color: $white;
-      text-align: center;
-      padding: 10px;
-      font-weight: 500;
-      cursor: pointer;
+      img {
+        height: 75px;
+      }
     }
+  }
+  .box {
+    font-size: 0.9rem;
+    border-radius: 10px;
+    padding: 30px;
   }
 }
 </style>

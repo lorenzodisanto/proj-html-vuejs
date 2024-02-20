@@ -43,15 +43,19 @@ export default {
   <section>
     <div class="container">
       <div class="title">
+        <img src="../../assets/img/thumbup1.jpg" alt="" />
         <h3>We Are Our Customers Saying?</h3>
-        <p>Opinions from our happy customers</p>
+        <p>Opinions from our happy customers.</p>
       </div>
       <div class="row">
         <div class="col" v-for="testimonial in testimonials">
-          <div class="card">
+          <div class="box">
             <p>{{ testimonial.text }}</p>
             <img :src="buildImagePath(testimonial.image)" alt="" />
             <p>{{ testimonial.name }}</p>
+            <div class="box-decoration">
+              <font-awesome-icon icon="fa-solid fa-quote-right" />
+            </div>
           </div>
         </div>
       </div>
@@ -65,23 +69,35 @@ export default {
 section {
   background-image: url(../../assets/img/comment-bg-autocar.jpg);
   text-align: center;
-  padding: 100px;
+  padding-bottom: 50px;
 
   .title {
     color: $white;
-    padding: 30px;
-  }
+    padding: 40px;
 
-  .card {
-    color: $black;
+    img {
+      margin: 20px;
+    }
+  }
+  .box {
     padding: 50px 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
 
     img {
       width: 100px;
       margin: 25px;
+    }
+
+    .box-decoration {
+      position: absolute;
+      top: 15%;
+      left: 40%;
+      transform: rotate(10deg);
+      font-size: 5rem;
+      color: #edebf6;
+      z-index: -1;
     }
   }
 }
