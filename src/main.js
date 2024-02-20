@@ -16,10 +16,21 @@ import {
   faFacebookF,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faAngleRight,
+  faAngleLeft,
+} from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
-library.add(faInstagram, faFacebookF, faTwitter, faBars);
+library.add(
+  faInstagram,
+  faFacebookF,
+  faTwitter,
+  faBars,
+  faAngleRight,
+  faAngleLeft
+);
 
 const app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);
