@@ -9,6 +9,53 @@ ul {
   font-weight: 500;
   padding: 0;
 }
+
 a {
   text-decoration: none;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+.touch-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.touch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.touch-black {
+  background-color: $black;
+  color: $white;
+  padding: 20px 40px;
+  font-weight: 500;
+}
+
+.touch-white {
+  color: $grey;
+  background-color: $white;
+  width: 150px;
+  padding: 20px 10px;
+  text-align: center;
+  border: 1px solid $grey;
+  border-radius: 5px;
+}
+
+.box {
+  background-color: $white;
+  box-shadow: 1px 2px 5px #dcdbdb;
+
+  img {
+    width: 100%;
+  }
 }
