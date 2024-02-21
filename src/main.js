@@ -27,7 +27,11 @@ import {
   faQuoteRight,
   faCheck,
   faXmark,
+  faLocationDot,
+  faPhoneVolume,
 } from "@fortawesome/free-solid-svg-icons";
+
+import { faEnvelope, faCopyright } from "@fortawesome/free-regular-svg-icons";
 
 /* add icons to the library */
 library.add(
@@ -43,7 +47,11 @@ library.add(
   faArrowRight,
   faQuoteRight,
   faCheck,
-  faXmark
+  faXmark,
+  faLocationDot,
+  faPhoneVolume,
+  faEnvelope,
+  faCopyright
 );
 
 const app = createApp(App);
