@@ -33,8 +33,8 @@ export default {
           </p>
         </div>
         <div class="text-center">
-          <font-awesome-icon icon="fa-brands fa-instagram" class="fs-2 px-3" />
           <font-awesome-icon icon="fa-brands fa-facebook-f" class="fs-2 px-3" />
+          <font-awesome-icon icon="fa-brands fa-instagram" class="fs-2 px-3" />
           <font-awesome-icon icon="fa-brands fa-twitter" class="fs-2 px-3" />
         </div>
       </div>

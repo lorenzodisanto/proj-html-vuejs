@@ -15,6 +15,9 @@
           <span>Special expert</span>
           <span>Team</span>
         </div>
+        <div class="circle-car">
+          <img src="../../assets/img/circle-auto-car-1.png" alt="" />
+        </div>
       </div>
       <div class="car-text">
         <h3>Want to buy or sell a vehicle?</h3>
@@ -41,6 +44,7 @@
           <div class="icon-car">
             <img src="../../assets/img/icon-car2.jpg" alt="" />
           </div>
+
           <div class="icon-car-text">
             <h4>2nd Hand Vehicles</h4>
             <p>
@@ -67,7 +71,6 @@
   display: flex;
   padding: 40px 0;
   .car {
-    background-image: url(../../assets/img/circle-auto-car-1.png);
     position: relative;
 
     .circle {
@@ -98,6 +101,12 @@
       bottom: 5%;
       right: 10%;
     }
+
+    .circle-car {
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
   }
   .car-text {
     padding: 40px;
@@ -108,6 +117,22 @@
     }
     .touch-container {
       justify-content: flex-start;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .car {
+    img {
+      width: 500px;
     }
   }
 }

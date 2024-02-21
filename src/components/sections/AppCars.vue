@@ -91,32 +91,32 @@ export default {
         {
           name: "Cabrio",
           image: "cabrio.jpg",
-          listings: "..",
+          listings: "3",
         },
         {
           name: "Coupe",
           image: "coupe.jpg",
-          listings: "..",
+          listings: "0",
         },
         {
           name: "Hatchback",
           image: "hatchback.jpg",
-          listings: "..",
+          listings: "2",
         },
         {
           name: "Pick Up",
           image: "pickup.jpg",
-          listings: "..",
+          listings: "0",
         },
         {
           name: "Sedan",
           image: "sedan.jpg",
-          listings: "..",
+          listings: "3",
         },
         {
           name: "SUV",
           image: "suv.jpg",
-          listings: "..",
+          listings: "4",
         },
       ],
     };
@@ -214,6 +214,7 @@ export default {
   }
   span {
     margin-right: 10px;
+    font-size: 0.9rem;
   }
 }
 </style>
