@@ -53,8 +53,8 @@ export default {
         <h3>Resent Articles</h3>
         <p>Useful indormation about car.</p>
       </div>
-      <div class="row">
-        <div class="col" v-for="article in articles">
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-3" v-for="article in articles">
           <div class="box">
             <div>
               <img :src="buildImagePath(article.image)" alt="" />

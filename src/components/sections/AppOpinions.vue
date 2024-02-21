@@ -47,8 +47,8 @@ export default {
         <h3>We Are Our Customers Saying?</h3>
         <p>Opinions from our happy customers.</p>
       </div>
-      <div class="row">
-        <div class="col" v-for="testimonial in testimonials">
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-3" v-for="testimonial in testimonials">
           <div class="box">
             <p>{{ testimonial.text }}</p>
             <img :src="buildImagePath(testimonial.image)" alt="" />
@@ -58,6 +58,10 @@ export default {
             </div>
           </div>
         </div>
+      </div>
+      <div class="slider-container">
+        <div class="slider active"></div>
+        <div class="slider"></div>
       </div>
     </div>
   </section>
@@ -98,6 +102,24 @@ section {
       font-size: 5rem;
       color: #edebf6;
       z-index: -1;
+    }
+  }
+
+  .slider-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .slider {
+      width: 50px;
+      height: 8px;
+      background-color: $white;
+      border-radius: 5px;
+      margin: 5px;
+    }
+    .slider.active {
+      background-color: $black;
+      width: 100px;
     }
   }
 }

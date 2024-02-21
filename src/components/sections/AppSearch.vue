@@ -61,6 +61,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 10px;
+
     .search-col {
       width: calc(100% / 8);
     }
@@ -69,5 +70,15 @@ section {
       border-radius: 5px;
     }
   }
+}
+
+@media screen and (max-width: 1400px) {
+  .touch {
+    width: 100px;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
 }
 </style>

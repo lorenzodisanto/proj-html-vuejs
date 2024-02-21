@@ -12,13 +12,26 @@ export default {
       <div>
         <img src="../assets/img/logo-autocar11.png" alt="" />
       </div>
-      <div>
-        <ul>
-          <li v-for="link in links">
-            <a :href="link.url">{{ link.text }}</a>
-          </li>
-        </ul>
-      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li v-for="link in links">
+              <a :href="link.url">{{ link.text }}</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div class="btn-header">
         <img src="../assets/padlock.png" alt="" />
         <span>My Account</span>
@@ -93,6 +106,22 @@ header {
       align-items: center;
       font-size: 2rem;
     }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  span {
+    font-size: 0.9rem;
+  }
+
+  .menu {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .btn-header span {
+    display: none;
   }
 }
 </style>
