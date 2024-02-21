@@ -145,7 +145,7 @@ export default {
           class="col-6 col-md-4 col-lg-2 p-0"
           v-for="carCategory in carCategories"
         >
-          <div class="box">
+          <div class="box text-center">
             <img :src="buildImagePath(carCategory.image)" alt="" />
             <p>
               {{ carCategory.name }}
